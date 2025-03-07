@@ -1,6 +1,6 @@
 # README
 
-This project is a Spring Boot application built with Gradle. It uses Java as the primary programming language.
+This project showcases a basic Spring Boot application with GraphQL integration.
 
 ## Prerequisites
 
