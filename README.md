@@ -25,7 +25,10 @@ This project showcases a basic Spring Boot application with GraphQL integration.
     ```
 4. The application will be running at `http://localhost:8080`.
 
-### API Endpoints
+## Postman collection for GraphQL endpoints
+Located in file `GraphQL.postman_collection.json`
+
+## Client Endpoints that call GraphQL
 GET http://localhost:8080/client
 
 #### Example Response

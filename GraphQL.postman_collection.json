@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "f2ea3f8d-1998-49bc-9563-2e48e34ccbc4",
+		"name": "GraphQL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26731153",
+		"_collection_link": "https://blue-meadow-4504.postman.co/workspace/Song-Projector~e8f469c5-1f94-49f3-9169-79a08a3994a9/collection/26731153-f2ea3f8d-1998-49bc-9563-2e48e34ccbc4?action=share&source=collection_link&creator=26731153"
+	},
+	"item": [
+		{
+			"name": "all books",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query all {\n  books {\n    id\n    name\n    pageCount\n  }\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bookById",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query byId {\n  bookById (id: \"book-1\")  {\n    id\n    name\n    pageCount\n  }\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation createBook {\n  createBook(\n    name: \"New Book\", \n    pageCount:2, \n    authorId:\"1\"\n  ) \n  {\n      name\n      id\n      pageCount\n  }\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
