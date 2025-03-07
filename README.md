@@ -58,7 +58,7 @@ GET http://localhost:8080/client
     }
 ```
 
-GET http://localhost:8080/client/{id}
+GET http://localhost:8080/client/book-1
 #### Example Response
 
 ```json
